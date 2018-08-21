@@ -5,6 +5,12 @@
 #   Test Package:              'Ctrl + Shift + T'
 # store ggplot theme configure
 
+
+#' theme for general NGS figures with ggplot
+#' @param base_size base font size, default is 14
+#' @examples
+#' p <- ggplot(mtcars) + geom_point(aes(x = wt, y = mpg,colour = factor(gear)))
+#' p + theme_onmath()
 theme_onmath <- function(base_size = 14) {
   theme_bw() +
     theme(panel.background = element_blank(),
