@@ -9,11 +9,12 @@ Description: Functions, ggplot themes and colors for NGS data cleaning
 License: MIT
 Encoding: UTF-8
 LazyData: true
-Imports: 
-    ggplot2
 Suggests: 
     RColorBrewer,
     knitr,
     rmarkdown
 RoxygenNote: 6.0.1
 VignetteBuilder: knitr
+Depends: 
+    ggplot2,
+    scales

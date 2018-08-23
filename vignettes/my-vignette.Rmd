@@ -14,21 +14,15 @@ Summer is a collection of functions, ggplot themes and colors for NGS data clean
 ## themes
 
 ```{r}
-library(ggplot2)
-library(summer)
 p <- ggplot(mtcars) + geom_point(aes(x = wt, y = mpg,colour = factor(gear)))
 ## basic theme for NGS plot with ggplot2
-p + theme_onmath() + ggtitle("theme_onmath")
+p + theme_onmath() + ggplot2::ggtitle("theme_onmath")
 ```
 
 ## colors
 
 ```{r}
-library(summer)
-library(scales)
-
 ## pig tissue color pallet1
-show_col(pig_tissue_color_theme1,
-         labels = F)
+show_col(pig_tissue_color_theme1, labels = F)
 
 ```
